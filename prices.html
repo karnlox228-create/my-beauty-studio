@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body { font-family: sans-serif; background: #121212; color: white; text-align: center; padding: 50px; }
+        .container { background: #1e1e1e; padding: 30px; border-radius: 20px; display: inline-block; border: 1px solid #c1a35f; }
+        h1 { color: #c1a35f; }
+        table { width: 100%; margin-top: 20px; border-collapse: collapse; }
+        td { padding: 10px; border-bottom: 1px solid #333; text-align: left; }
+        .price { text-align: right; color: #c1a35f; font-weight: bold; }
+        .back-link { display: block; margin-top: 20px; color: #888; text-decoration: none; }
+    </style>
+</head>
+<body>
+<!-- Навигационное меню -->
+<nav class="top-nav">
+    <div class="logo">Beauty Studio</div>
+    <div class="menu-links">
+        <a href="index.html">Главная</a>
+        <a href="portfolio.html">Работы</a>
+        <a href="prices.html">Цены</a>
+    </div>
+</nav>
+
+<style>
+    /* Стили для меню */
+    .top-nav {
+        background: rgba(30, 30, 30, 0.95); /* Полупрозрачный фон */
+        padding: 15px 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky; /* Меню "липнет" к верху при скролле */
+        top: 0;
+        z-index: 1000;
+        border-bottom: 1px solid #c1a35f;
+        margin-bottom: 30px;
+    }
+
+    .logo {
+        color: #c1a35f;
+        font-weight: bold;
+        font-size: 1.4em;
+        text-transform: uppercase;
+    }
+
+    .menu-links a {
+        color: #e0e0e0;
+        text-decoration: none;
+        margin-left: 20px;
+        font-weight: 500;
+        transition: 0.3s;
+    }
+
+    .menu-links a:hover {
+        color: #c1a35f;
+    }
+
+    /* Чтобы контент не прилипал к краям на мобилках */
+    body { margin: 0; }
+</style>
+    <div class="container">
+        <h1>Прайс-лист</h1>
+        <table>
+            <tr><td>Массаж спины</td><td class="price">1500 ₽</td></tr>
+            <tr><td>Тату (мини)</td><td class="price">3000 ₽</td></tr>
+            <tr><td>Маникюр + гель-лак</td><td class="price">1800 ₽</td></tr>
+        </table>
+        <a href="index.html" class="back-link">← Вернуться на главную</a>
+    </div>
+</body>
+</html>
+
+<nav>
+    <a href="index.html" style="color: #c1a35f; margin-right: 20px; text-decoration: none;">Главная</a>
+    <a href="prices.html" style="color: #c1a35f; text-decoration: none;">Цены и услуги</a>
+</nav>
